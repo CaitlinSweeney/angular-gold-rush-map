@@ -1,0 +1,27 @@
+html{
+  width 1000px;
+}
+body{
+  background-color: #ffe8cb;
+}
+header{
+ font-size: 24px;
+ margin: auto;
+}
+
+.myMap{
+  margin: auto;
+  position: relative;
+  width: 800px;
+  height: 600px;
+  background-image: url(images/main-map.jpg);
+  background-size: 100%;
+}
+
+.digger {
+  background-image: url(images/gold-digger.png);
+  /*background-size: cover;*/
+  position: absolute;
+  height: 110px;
+  width: 75px
+}

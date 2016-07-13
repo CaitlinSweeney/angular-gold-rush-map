@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="goldRush">
+
+  <head>
+    <title>NorthEast Gold Rush</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type= "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+    <script type= "text/javascript" src="main.js"></script>
+  </head>
+  <body>
+
+    <header>Gold Rushin' (In the NorthEast)</header>
+
+    <div ng-controller='topAppCtrl as topApp' >
+
+      <div class= "myMap"  ng-click = "topApp.showDigger($event)">
+
+      <div ng-repeat = "coords in topApp.newLoc">
+
+      <div class="digger" style= "left : {{ topApp.coords.x }}px ; top : {{topApp.coords.y }}px "></div>
+
+      </div>
+      </div>
+
+  </body>
+</html>
+<!-- style= "left : {{ topApp.coords.x }}px ; top : {{topApp.coords.y }}px " -->
