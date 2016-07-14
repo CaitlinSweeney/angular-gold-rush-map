@@ -12,17 +12,17 @@
 
     <header>Gold Rushin' (In the NorthEast)</header>
 
-    <div ng-controller='topAppCtrl as topApp' >
+    <div ng-controller='topAppCtrl as topApp'>
 
-      <div class= "myMap"  ng-click = "topApp.showDigger($event)">
+      <div class= "myMap" ng-click = "topApp.showDigger($event)">
 
-      <div ng-repeat = "coords in topApp.newLoc">
+      <div ng-repeat = "coords in topApp.newLoc" ng-click="removeDigger($index)" style = "left : {{ topApp.coords.x }}vw ; top : {{topApp.coords.y }}vh ">
 
-      <div class="digger" style= "left : {{ topApp.coords.x }}px ; top : {{topApp.coords.y }}px "></div>
+      <div class="digger" style = "left : {{ topApp.coords.x }}vw ; top : {{topApp.coords.y }}vh " data-index="{{$index}}"></div>
 
       </div>
       </div>
 
   </body>
 </html>
-<!-- style= "left : {{ topApp.coords.x }}px ; top : {{topApp.coords.y }}px " -->
+<!-- style="left:{{marker.x}}vw;top:{{marker.y}}vh;" data-index="{{$index}}"> -->
